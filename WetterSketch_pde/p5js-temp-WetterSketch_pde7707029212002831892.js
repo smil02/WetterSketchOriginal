@@ -7,7 +7,6 @@ function setup() {
   noStroke();
   rect(0, 600, 1000, 130);
 
- 
   // Wolke 1
   fill("white");
   noStroke();
@@ -63,16 +62,22 @@ function setup() {
 }
 
 function draw() {
+  frameRate(144);
   stroke(100, 100, 255);
   strokeWeight(1.5);
   
   let x = random(300,400);
   let y = random(414, 558);
+  
    line(x,y,x,y + 40);
+   
   stroke(80, 160, 250);
   strokeWeight(4);
   
   let x2 = random(300,400);
   let y2 = random(414,558);
+  
    line(x2,y2,x2,y2 + 40);
+   
+   
 }
